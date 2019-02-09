@@ -1,0 +1,75 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.Graph {
+  height: 500px;
+  position: relative;
+  top: 10px;
+}
+
+.Axes {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.Axes > table {
+  height: 100%;
+  width: 95%;
+  border-collapse: collapse;
+}
+
+.Axes > table tr > td {
+  border-bottom: 1px dashed rgb(221, 221, 221);
+  border-right: 1px dashed rgb(221, 221, 221);
+  padding: 0;
+}
+
+.Axes > table tr > td:first-child {
+  border-right: 1px solid grey;
+  border-bottom: none;
+  width: 50px;
+  font-size: small;
+  position: relative;
+}
+
+.Axes > table tr > td:first-child > span {
+  position: absolute;
+  display: block;
+  bottom: -25%;
+  right: 5px;
+}
+
+.Axes > table tr:last-child > td {
+  border-top: 1px solid grey;
+  border-bottom: none;
+  border-right: none;
+  position: relative;
+}
+
+.Axes > table tr:last-child > td > span {
+  position: absolute;
+  display: block;
+  font-size: small;
+  top: 15px;
+  right: -5%;
+}
+
+.Axes > table tr:last-child > td:first-child {
+  border-top: none;
+  border-right: none;
+}
+
+.Axes > table tr:last-child > td:first-child > span {
+  top: 15px;
+  right: -5%;
+}
+
+.Plot {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: left;
+}
